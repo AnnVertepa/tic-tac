@@ -1,4 +1,4 @@
-import { Button } from '@my-app/ui-library'
+import { Button, GameBoard, GameControls } from '@my-app/ui-library'
 import { Link, Route, Routes } from 'react-router-dom'
 
 export default function App() {
@@ -27,7 +27,8 @@ export default function App() {
         <Route path="/game" element={
           <div>
             <h1>Игра</h1>
-            <p>Здесь будет игровое поле</p>
+            <GameBoard />
+            <GameControls />
             <Button>Сделать ход</Button>
           </div>
         } />
