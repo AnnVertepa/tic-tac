@@ -23,7 +23,6 @@ export default defineConfig([
       'react': react,
       'import': importPlugin
     },
-  }, {
     rules: {
       "indent": ["error", 2],
       'semi': ['error', 'never'],
@@ -55,6 +54,7 @@ export default defineConfig([
         'error',
         { blankLine: 'always', prev: '*', next: 'return' }
       ],
+      'no-multiple-empty-lines': ['error', { max: 1 }],
     },
   },
 ])
