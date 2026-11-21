@@ -11,6 +11,12 @@
 tic-tac/
 ├── frontend/                 # Основное приложение (React + Vite)
 │   ├── src/
+│   │   ├── core/
+│   │   │   └── types.ts      # Типы предметной области (Board, Cell, Player)
+│   │   ├── pages/            # Компоненты страниц
+│   │   │   ├── Home.tsx
+│   │   │   ├── Game.tsx
+│   │   │   └── Rules.tsx
 │   │   ├── App.tsx           # Главный компонент с роутингом
 │   │   ├── main.tsx          # Точка входа в приложение
 │   │   └── index.css         # Глобальные стили (если есть)
